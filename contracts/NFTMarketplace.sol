@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "hardhat/console.sol";
 
 contract NFTMarketplace is ERC721URIStorage {
-    Counter.Counter private _tokenIds;    // number of tokenIds
+    Counters.Counter private _tokenIds;    // number of tokenIds
     Counters.Counter private _itemsSold; //number of nfts sold
     
     uint256 listingPrice = 0.0015 ether;
